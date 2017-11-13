@@ -56,8 +56,8 @@ class Ball extends Drawable {
       this._speedY = -this._speedY;
     }
 
-    if (this.paddle.y < this._y + this._height
-      && (this.paddle.x < this._x && this._x + this._width < this.paddle.x + this.paddle.width)) {
+    if (this.paddle.getY() < this._y + this._height
+      && (this.paddle.getX() < this._x && this._x + this._width < this.paddle.getX() + this.paddle.getWidth())) {
       this._speedY = -this._speedY;
     }
 
